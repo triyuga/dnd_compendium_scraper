@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Power><file>DnD-Insider-Compendium/Power/1000.html</file><fields><Name>Tide of Iron</Name><ClassLevel>Fighter Attack 1</ClassLevel><Flavor>After each swing, you use your shield to shove your foe backward, and then you surge ahead.</Flavor><Frequency>At-Will</Frequency><Keywords>Martial, Weapon</Keywords><ActionType>Standard Action</ActionType><RangeAoE>Melee weapon</RangeAoE><Rules>Requirement: You must be using a shield.
+Target: One creature
+Attack: Strength vs. AC
+Hit: 1[W] + Strength modifier damage, and you can push the target 1 square if it is no larger than one size category larger than you. You can then shift 1 square into the space that the target left.
+Level 21: 2[W] + Strength modifier damage.</Rules><RulesHTML>&lt;span class="flavor"&gt;&lt;b&gt;Requirement: &lt;/b&gt;You must be using a shield.&lt;/span&gt;
+&lt;span class="flavor"&gt;&lt;b&gt;Target: &lt;/b&gt;One creature&lt;/span&gt;
+&lt;span class="flavor"&gt;&lt;b&gt;Attack: &lt;/b&gt;Strength vs. AC&lt;/span&gt;
+&lt;span class="flavor"&gt;&lt;b&gt;Hit: &lt;/b&gt;1[W] + Strength modifier damage, and you can push the target 1 square if it is no larger than one size category larger than you. You can then shift 1 square into the space that the target left.&lt;/span&gt;
+&lt;span class="flavor"&gt;Level 21: 2[W] + Strength modifier damage.&lt;/span&gt;
+</RulesHTML></fields><formatOutput>1</formatOutput></Power>
