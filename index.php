@@ -69,7 +69,7 @@ foreach ($powers as $power) {
   //$xml_string = $xml->saveXML();
   //$xml_string = $xml->saveXML();
 }
-//echo "<br />OK, done.";
+echo "OK, we're done! Please check $xml_path";
 
 //header ("Content-Type:text/xml");
 //header('Content-type: application/xml');
