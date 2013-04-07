@@ -1,24 +1,32 @@
 <?php
 include_once("functions.php");
-ini_set('max_execution_time', 300); //300 seconds = 5 minutes
+ini_set('max_execution_time', 300); // 300 seconds = 5 minutes - running this code may take a long time.
 
 $path = 'dnd_compendium_html/Power';
 $xml_path = 'dnd_compendium_xml/Power';
+
+if (!file_exists($path)){
+  die('Error: source dir ' . $path . ' does not exist. Please point $path var at DnD Compendium Power dir.');
+}
+if (!file_exists($xml_path)) {
+  if (!mkdir($xml_path, 0755, TRUE)) {
+    die('Error: unable create dir ' . $xml_path);
+  }
+}
+
 $files = listdir($path);
 //$files = array('DnD-Insider-Compendium/Power/416.html');
 
 //$test = scrape_power('DnD-Insider-Compendium/Power/416.html');
 //echo '<pre>'; print_r($test); exit;
 
+//echo "this might take a while... Please be patient...";
+
 foreach ($files as $file) {
-  //echo $files[$i] .'<br />';
   $filename = str_replace($path.'/', '', $file);
   $filename = str_replace('.html', '', $filename);
   //echo $filename .'<br />';
   if ($filename[0] != '.' && $filename != '') {
-    //echo $filename .'<br />';
-    //die($files[$i]);
-    //$powers[$i]['file'] = $files[$i];
     $powers[$filename]['filename'] = $filename;
     $powers[$filename]['fields'] = scrape_power($file);
     $powers[$filename]['fields']['power_dndinsider_id'] = $filename;
@@ -61,7 +69,7 @@ foreach ($powers as $power) {
   //$xml_string = $xml->saveXML();
   //$xml_string = $xml->saveXML();
 }
-
+//echo "<br />OK, done.";
 
 //header ("Content-Type:text/xml");
 //header('Content-type: application/xml');
