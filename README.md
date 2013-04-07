@@ -1,13 +1,15 @@
 dnd_compendium_scraper
 ======================
 
-- extracts fields from DnD Insider Compendium HTML blocks.
+What is it?:
+- PHP code to extract fields from DnD Insider Compendium HTML blocks.
 - exports to xml.
+- Powers only so far! Working on other compendium entities. A weekend(s) project...
 
+How to use it:
 - requires a html download of the full dndinsider compendium.
 - I got a download using: https://github.com/jfpowell/Dungeons-and-Dragons-Insider-Compendium-Downloader
 - ^ requires dndinsider account.
-
 - place dnd_compendium_html contents in root folder
 - running index.php will cause all powers to be exported as xml files to dnd_compendium_xml/Power/[filename].xml
 - check path settings in index.php, and make sure directories exist.
